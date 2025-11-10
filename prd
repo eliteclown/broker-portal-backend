@@ -1,0 +1,58 @@
+•	Professional Liability Insurance(Errors&Omissions)
+
+•	Website:-Broker portal for insurance quote and list page.
+
+•	Objective :-to build a broker portal where broker can submit and create the quote on behalf of any end customer.
+
+•	Actors:-Broker users.
+
+•	Use cases/journey:- Develop a web application (Broker Portal) for given LOB for insurance company that allows users to get insurance quotes, view a list of available insurance policies, and perform CRUD (Create, Read, Update, Delete) operations on these policies. The application will also include a rating system for the insurance quotes.
+
+•	Components to be built:-
+
+•	Quote Form: Form component for getting insurance quotes, see the premium and submit the request to create the quote. The user can change the parameter and see the change in premium before he final submit. The quote with premium will be saved in DB for the retrieval later through the Quote list. Each Line of Business (LoB) will have some common but many different inputs to drive the Rating / Premium.
+•	Quote List: Component to display the list of insurance quotes submitted. The broker can edit the quote, View quote, Soft Delete, filter the quote, sort, paginate or submit a request to bind quote to policy. Post this the broker can only view the quote and its status. 
+•	Quote Details: Component to display individual quote details and premium based on ratings done previously at the time of quote/submission.
+•	Rating: Component to handle  ratings based on parameters provided in quote submission
+•	APIs and database to support above operations
+•	Rating API should be independent
+•	Validation and Exception handling
+
+
+
+•	Ui pages:-
+Authentication - Any DB/OAuth
+Quote Page (New Submission) and View Premium
+Quote List with Action view, edit, soft delete and submit for bind
+View Quote
+
+Page should be responsive and gracefully handle Chrome and Edge
+
+
+•	Business logic:-
+              Business Logic to Validate the inputs
+Business logic to calculate the Rating and this should be a managed code covered       with Unit test (Mandatory). This should take care any additional factor which you can think of around additional coverages or any other parameters
+               You can use ORM for database
+
+
+•	Key fields/inputs:-
+
+Personal Details of Insured (Name, Address, Contact details)
+Vehicle Details , IDV and other relevant details
+Driver Information
+Additional Coverage / Optional Coverages
+
+Note: Inputs mentioned for the project mentioned are indicative, you can research and add any important missing input for the project specific LOB
+
+
+
+•	Out of Scope:-
+
+1.	Payment Processing
+2.	Any licensed 3rd Party Integration
+3.	Multiple users persona or role matrix
+4.	Versioning of various quote details beyond the basic audit trail and history
+5.	User Management
+6.	State or Country wise variations but our focus is primary on US P&C Insurance for ease
+7.	Only pick 1-2 states for rating 
+8.	Cloud hosting or Hosting (Optional)
